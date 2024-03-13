@@ -6,11 +6,23 @@
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
+          margin: 0;
+          padding: 0;
         }
         .teaser_video {
-          flex: 1 0 33%; /* grow, shrink, basis */
+          flex: 1 0 33%; 
           padding: 0;
           margin: 0;
+          text-align: center;
+        }
+        .teaser_video video {
+          width: 100%;
+          padding: 0;
+          margin: 0;
+        }
+        .teaser_video div {
+          font-size: 18px; 
+          font-style: italic;
         }
         #our_results_container {
           text-align: center;
@@ -31,7 +43,6 @@
           width: 25%;
           text-align: center;
           font-style: italic;
-          font-weight: bold;
           font-size: 18px;
         }
         .video {
@@ -70,21 +81,40 @@
             <td align=center width=200px><center><span style="font-size:20px; text-align: center">Yaniv Taigman</center></td>
         </tr>
     </table>
-    <p style="margin-bottom:0.5cm;"></p>
+    <p style="margin-bottom:0.1cm;"></p>
     <table align=center width=800px>
         <tr>
             <td align=center width=250px><center><span style="font-size:14px; text-align: center;"><sup>*</sup>Equal Contribution</span></center></td>
         </tr>
     </table>
 
-    <div class="teaser">
-      <video class="teaser_video" src="assets/teaser_0.mp4" autoplay loop muted width=360></video>
-      <video class="teaser_video" src="assets/teaser_1.mp4" autoplay loop muted width=360></video>
-      <video class="teaser_video" src="assets/teaser_2.mp4" autoplay loop muted width=360></video>
-      <video class="teaser_video" src="assets/teaser_3.mp4" autoplay loop muted width=360></video>
-      <video class="teaser_video" src="assets/teaser_4.mp4" autoplay loop muted width=360></video>
-      <video class="teaser_video" src="assets/teaser_5.mp4" autoplay loop muted width=360></video>
-    </div>
+    <br/>
+ <div class="teaser">
+  <div class="teaser_video">
+    <div>In an aquarium</div>
+    <video src="assets/teaser_0.mp4" autoplay loop muted width=360></video>
+  </div>
+  <div class="teaser_video">
+    <div>Sitting on a red bench</div>
+    <video src="assets/teaser_1.mp4" autoplay loop muted width=360></video>
+  </div>
+  <div class="teaser_video">
+    <div>Make it snow</div>
+    <video src="assets/teaser_2.mp4" autoplay loop muted width=360></video>
+  </div>
+  <div class="teaser_video">
+    <video src="assets/teaser_3.mp4" autoplay loop muted width=360></video>
+    <div>Replace with a panda</div>
+  </div>
+  <div class="teaser_video">
+    <video src="assets/teaser_4.mp4" autoplay loop muted width=360></video>
+    <div>In Minecraft style</div>
+  </div>
+  <div class="teaser_video">
+    <video src="assets/teaser_5.mp4" autoplay loop muted width=360></video>
+    <div>Paint it pink and blue</div>
+  </div>
+</div>
 
     <p style="margin-bottom:0.5cm;"></p>
     <table align=center width=800px height=80px>
