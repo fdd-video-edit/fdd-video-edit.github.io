@@ -2,6 +2,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
 <html><head>
     <style>
+        #our_results_container {
+          text-align: center;
+          font-size: 30px; /* adjust this value as needed */
+        }
+        .results {
+            text-align: center;
+        }
         .title-container {
             display: flex;
             justify-content: space-between;
@@ -33,20 +40,65 @@
 </head>
 
 <body>
+<div class="n-title">
+    <p style="margin-top:1cm;"></p>
+   <center><h1>Video Editing via Factorized Diffusion Distillation</h1></center>
+   <span style="font-size:24px">
+    <table align=center width=800px height=40px>
+        <tr>
+            <td align=center width=300px><center><span style="font-size:20px; text-align: center">Uriel Singer<sup>*</sup></span></center></td>
+            <td align=center width=300px><center><span style="font-size:20px; text-align: center">Amit Zohar<sup>*</sup></span></center></td>
+            <td align=center width=300px><center><span style="font-size:20px; text-align: center">Yuval Kirstain</center></td>
+        </tr>
+    </table>
+    <table align=center width=1000px>
+        <tr>
+            <td align=center width=200px><center><span style="font-size:20px; text-align: center">Shelly Sheynin</center></td>
+            <td align=center width=200px><center><span style="font-size:20px; text-align: center">Adam Polyak</center></td>
+            <td align=center width=200px><center><span style="font-size:20px; text-align: center">Devi Parikh</center></td>
+            <td align=center width=200px><center><span style="font-size:20px; text-align: center">Yaniv Taigman</center></td>
+        </tr>
+    </table>
+    <p style="margin-bottom:0.5cm;"></p>
+    <table align=center width=800px>
+        <tr>
+            <td align=center width=250px><center><span style="font-size:14px; text-align: center;"><sup>*</sup>Equal Contribution</span></center></td>
+        </tr>
+    </table>
+    <p style="margin-bottom:0.5cm;"></p>
+    <table align=center width=800px height=80px>
+        <tr>
+            <td align=center width=250px><center><span style="font-size:40px; text-align: center;">Abstract</span></center></td>
+        </tr>
+    </table>
+    <table align=center width=1200px height=100px>
+        <tr>
+            <td align=center width=1200px><center><span style="font-size:18px; text-align: center;">We introduce Emu Video Edit (EVE), a model that establishes a new state-of-the art in video editing without relying on any supervised video editing data. To develop EVE we separately train an image editing adapter and a video generation adapter, and attach both to the same text-to-image model. Then, to align the adapters towards video editing we introduce a new unsupervised distillation procedure, Factorized Diffusion Distillation.
+                This procedure distills knowledge from one or more teachers simultaneously, without
+                any supervised data. We utilize this procedure to teach EVE to edit videos by jointly
+                distilling knowledge to (i) precisely edit each individual frame from the image editing
+                adapter, and (ii) ensure temporal consistency among the edited frames using the video
+                generation adapter. Finally, to demonstrate the potential of our approach in unlocking
+                other capabilities, we align additional combinations of adapters</span></center></td>
+        </tr>
+    </table>
+    <p style="margin-bottom:0.5cm;"></p>
+</div>
+
+<hr>
 <div class="page-container">
-  <h1 align="center">Video Editing via Factorized Diffusion Distillation</h1>
+  <!-- <h1 align="center">Video Editing via Factorized Diffusion Distillation</h1>
    <h2 align="center">9816</h2>
-  <h2 align="center">Supplementary Material</h2>
+  <h2 align="center">Supplementary Material</h2> -->
 
   <!------------------ BEGIN SECTION ------------------>
 
   <!-- <p>&nbsp;</p> -->
   <!-- <hr> -->
-  <h2 id="our_results_container" class="content"><a name="image-results" id="image-results"></a>Our Results</h2>
-
-  <p class="content">
-        We present sample results of our method. For each input video we showcase three different edits.
-  </p>
+  <h2 id="our_results_container" class="results"><a name="image-results" id="image-results"></a>Our Results</h2>
+   <p class="results">
+      We present sample results of our method. For each input video we showcase three different edits.
+   </p>
 
   <table  width="1200" align="center" >
   <tbody>
@@ -56,7 +108,7 @@
         
             <div class="title">Remove the hat</div>
             
-            <div class="title">Make it rain</div>
+            <div class="title">Add a pink skirt</div>
             
             <div class="title">Replace with a panda</div>
             
@@ -66,9 +118,9 @@
         <div class="title-container">
         <div class="title">Input</div>
         
-            <div class="title">Add pyramids in the back</div>
+            <div class="title">With pyramids in the back</div>
             
-            <div class="title">With a pink skirt</div>
+            <div class="title">Add a balloon</div>
             
             <div class="title">In cartoon style</div>
             
@@ -90,11 +142,11 @@
         <div class="title-container">
         <div class="title">Input</div>
         
-            <div class="title">In a show stage</div>
+            <div class="title">Cover it with flowers</div>
             
-            <div class="title">Cartoon style</div>
+            <div class="title">Transform into a penguin</div>
             
-            <div class="title">Depth map</div>
+            <div class="title">Turn the floor into glass</div>
             
         </div>
         <video class="video" src="assets/3.mp4" autoplay loop controls muted></video>
@@ -102,11 +154,11 @@
         <div class="title-container">
         <div class="title">Input</div>
         
-            <div class="title">Add a scarf</div>
+            <div class="title">In a show stage</div>
             
-            <div class="title">Transform into a penguin</div>
+            <div class="title">Cartoon style</div>
             
-            <div class="title">Turn the floor into glass</div>
+            <div class="title">Depth map</div>
             
         </div>
         <video class="video" src="assets/4.mp4" autoplay loop controls muted></video>
@@ -126,11 +178,11 @@
         <div class="title-container">
         <div class="title">Input</div>
         
-            <div class="title">Add metal gloves</div>
+            <div class="title">Dressed as a princess</div>
             
-            <div class="title">In an amusement park</div>
+            <div class="title">With police uniform</div>
             
-            <div class="title">Make it snow</div>
+            <div class="title">Replace with a penguin</div>
             
         </div>
         <video class="video" src="assets/6.mp4" autoplay loop controls muted></video>
@@ -186,17 +238,17 @@
         <div class="title-container">
         <div class="title">Input</div>
         
-            <div class="title">Dressed as a princess</div>
+            <div class="title">Add metal gloves</div>
             
-            <div class="title">With police uniform</div>
+            <div class="title">At an amusement park</div>
             
-            <div class="title">Replace with a penguin</div>
+            <div class="title">Make it snow</div>
             
         </div>
         <video class="video" src="assets/11.mp4" autoplay loop controls muted></video>
         
-		</tbody>
-	</table>
+        </tbody>
+    </table>
     <!------------------ END SECTION ------------------>
 </div>
 </body>
