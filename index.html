@@ -2,9 +2,19 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
 <html><head>
     <style>
+        .teaser {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+        .teaser_video {
+          flex: 1 0 33%; /* grow, shrink, basis */
+          padding: 0;
+          margin: 0;
+        }
         #our_results_container {
           text-align: center;
-          font-size: 30px; /* adjust this value as needed */
+          font-size: 30px;
         }
         .results {
             text-align: center;
@@ -28,7 +38,7 @@
             display: block;
             width: 1440px;
             height: 360px;
-            margin: 0 0 20px -100px; 
+            margin: 0 0 5px -100px; 
         }
         .content {
             margin-left: -100px;
@@ -66,6 +76,16 @@
             <td align=center width=250px><center><span style="font-size:14px; text-align: center;"><sup>*</sup>Equal Contribution</span></center></td>
         </tr>
     </table>
+
+    <div class="teaser">
+      <video class="teaser_video" src="assets/teaser_0.mp4" autoplay loop muted width=360></video>
+      <video class="teaser_video" src="assets/teaser_1.mp4" autoplay loop muted width=360></video>
+      <video class="teaser_video" src="assets/teaser_2.mp4" autoplay loop muted width=360></video>
+      <video class="teaser_video" src="assets/teaser_3.mp4" autoplay loop muted width=360></video>
+      <video class="teaser_video" src="assets/teaser_4.mp4" autoplay loop muted width=360></video>
+      <video class="teaser_video" src="assets/teaser_5.mp4" autoplay loop muted width=360></video>
+    </div>
+
     <p style="margin-bottom:0.5cm;"></p>
     <table align=center width=800px height=80px>
         <tr>
@@ -80,7 +100,7 @@
                 distilling knowledge to (i) precisely edit each individual frame from the image editing
                 adapter, and (ii) ensure temporal consistency among the edited frames using the video
                 generation adapter. Finally, to demonstrate the potential of our approach in unlocking
-                other capabilities, we align additional combinations of adapters</span></center></td>
+                other capabilities, we align additional combinations of adapters.</span></center></td>
         </tr>
     </table>
     <p style="margin-bottom:0.5cm;"></p>
@@ -96,26 +116,11 @@
 
   <!-- <p>&nbsp;</p> -->
   <!-- <hr> -->
-  <h2 id="our_results_container" class="results"><a name="image-results" id="image-results"></a>Our Results</h2>
-   <p class="results">
-      We present sample results of our method. For each input video we showcase three different edits.
-   </p>
+  <h2 id="our_results_container" class="results"><a name="image-results" id="image-results"></a>Precise Video Editing</h2>
 
   <table  width="1200" align="center" >
   <tbody>
 
-        <div class="title-container">
-        <div class="title">Input</div>
-        
-            <div class="title">Remove the hat</div>
-            
-            <div class="title">Add a pink skirt</div>
-            
-            <div class="title">Replace with a panda</div>
-            
-        </div>
-        <video class="video" src="assets/0.mp4" autoplay loop controls muted></video>
-        
         <div class="title-container">
         <div class="title">Input</div>
         
@@ -126,7 +131,7 @@
             <div class="title">In cartoon style</div>
             
         </div>
-        <video class="video" src="assets/1.mp4" autoplay loop controls muted></video>
+        <video class="video" src="assets/0.mp4" autoplay loop controls muted></video>
         
         <div class="title-container">
         <div class="title">Input</div>
@@ -135,10 +140,10 @@
             
             <div class="title"> Dressed as a fireman</div>
             
-            <div class="title"> Set in Tokyo</div>
+            <div class="title"> In Tokyo</div>
             
         </div>
-        <video class="video" src="assets/2.mp4" autoplay loop controls muted></video>
+        <video class="video" src="assets/1.mp4" autoplay loop controls muted></video>
         
         <div class="title-container">
         <div class="title">Input</div>
@@ -150,7 +155,7 @@
             <div class="title">Turn the floor into glass</div>
             
         </div>
-        <video class="video" src="assets/3.mp4" autoplay loop controls muted></video>
+        <video class="video" src="assets/2.mp4" autoplay loop controls muted></video>
         
         <div class="title-container">
         <div class="title">Input</div>
@@ -162,7 +167,7 @@
             <div class="title">Depth map</div>
             
         </div>
-        <video class="video" src="assets/4.mp4" autoplay loop controls muted></video>
+        <video class="video" src="assets/3.mp4" autoplay loop controls muted></video>
         
         <div class="title-container">
         <div class="title">Input</div>
@@ -174,7 +179,7 @@
             <div class="title">In pink colors</div>
             
         </div>
-        <video class="video" src="assets/5.mp4" autoplay loop controls muted></video>
+        <video class="video" src="assets/4.mp4" autoplay loop controls muted></video>
         
         <div class="title-container">
         <div class="title">Input</div>
@@ -186,7 +191,31 @@
             <div class="title">Replace with a penguin</div>
             
         </div>
+        <video class="video" src="assets/5.mp4" autoplay loop controls muted></video>
+        
+        <div class="title-container">
+        <div class="title">Input</div>
+        
+            <div class="title">Remove the plant</div>
+            
+            <div class="title">Paint the mushroom pink</div>
+            
+            <div class="title">Paint the sofa gold</div>
+            
+        </div>
         <video class="video" src="assets/6.mp4" autoplay loop controls muted></video>
+        
+        <div class="title-container">
+        <div class="title">Input</div>
+        
+            <div class="title">Dressed as a doctor</div>
+            
+            <div class="title">Set in New York</div>
+            
+            <div class="title">A painting by Picasso</div>
+            
+        </div>
+        <video class="video" src="assets/7.mp4" autoplay loop controls muted></video>
         
         <div class="title-container">
         <div class="title">Input</div>
@@ -198,19 +227,19 @@
             <div class="title">Generate a sketch</div>
             
         </div>
-        <video class="video" src="assets/7.mp4" autoplay loop controls muted></video>
+        <video class="video" src="assets/8.mp4" autoplay loop controls muted></video>
         
         <div class="title-container">
         <div class="title">Input</div>
         
-            <div class="title">Make it snow</div>
+            <div class="title">In the snow</div>
             
             <div class="title">Cover with mud</div>
             
             <div class="title">As a pop art painting</div>
             
         </div>
-        <video class="video" src="assets/8.mp4" autoplay loop controls muted></video>
+        <video class="video" src="assets/9.mp4" autoplay loop controls muted></video>
         
         <div class="title-container">
         <div class="title">Input</div>
@@ -222,7 +251,7 @@
             <div class="title">Replace with a penguin</div>
             
         </div>
-        <video class="video" src="assets/9.mp4" autoplay loop controls muted></video>
+        <video class="video" src="assets/10.mp4" autoplay loop controls muted></video>
         
         <div class="title-container">
         <div class="title">Input</div>
@@ -234,7 +263,7 @@
             <div class="title">Futuristic style</div>
             
         </div>
-        <video class="video" src="assets/10.mp4" autoplay loop controls muted></video>
+        <video class="video" src="assets/11.mp4" autoplay loop controls muted></video>
         
         <div class="title-container">
         <div class="title">Input</div>
@@ -246,7 +275,19 @@
             <div class="title">Make it snow</div>
             
         </div>
-        <video class="video" src="assets/11.mp4" autoplay loop controls muted></video>
+        <video class="video" src="assets/12.mp4" autoplay loop controls muted></video>
+        
+        <div class="title-container">
+        <div class="title">Input</div>
+        
+            <div class="title">Add fireworks in the back</div>
+            
+            <div class="title">Make the suit green</div>
+            
+            <div class="title">Make it autumn</div>
+            
+        </div>
+        <video class="video" src="assets/13.mp4" autoplay loop controls muted></video>
         
         </tbody>
     </table>
