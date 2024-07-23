@@ -37,7 +37,25 @@
         width: 80%;
         height: auto;
         margin: 0 10%; 
-    } 
+    }
+    .tgve-video {
+        display: block;
+        width: 60%;
+        height: auto;
+        margin: 0 20%; 
+    }
+    .tgve-video-title-container {
+      display: flex;
+      justify-content: space-between;
+      width: 60%;
+      margin: 0 20%;
+    }
+    .tgve-video-title {
+      width: 60%;
+      text-align: center;
+      font-style: italic;
+      font-size: 1em; /* Adjust as needed */
+    }
     .equal-contribution {
       text-align: center;
       width: 80%;
@@ -545,6 +563,85 @@ We introduce Emu Video Edit (EVE), a model that establishes a new state-of-the a
   </div>
 </section>
 
+<!-- TGVE+ -->
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">TGVE+ Comparison</h2>
+        <div class="content has-text-justified">
+          <p>
+A comparison of our model with the previous state-of-the-art, InstructVid2Vid, on TGVE+<br/><br/>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+<table width="960" align="center" >
+  <tbody>
+        <div class="tgve-video-title-container">
+            <div class="tgve-video-title">Add a group of dolphins swimming in the water</div>
+            <div class="tgve-video-title">Ours</div>        
+            <div class="tgve-video-title">InsVid2Vid</div>
+            
+        </div>
+        <video class="tgve-video" src="assets/tgve_add_1.mp4" autoplay loop controls muted playsinline></video>
+  </tbody>
+  <tbody>
+        <div class="tgve-video-title-container">
+            <div class="tgve-video-title">Change the background to a beach</div>
+            <div class="tgve-video-title">Ours</div>        
+            <div class="tgve-video-title">InsVid2Vid</div>
+            
+        </div>
+        <video class="tgve-video" src="assets/tgve_background_1.mp4" autoplay loop controls muted playsinline></video>
+  </tbody>
+  <tbody>
+        <div class="tgve-video-title-container">
+            <div class="tgve-video-title">Make the sun red</div>
+            <div class="tgve-video-title">Ours</div>        
+            <div class="tgve-video-title">InsVid2Vid</div>
+            
+        </div>
+        <video class="tgve-video" src="assets/tgve_inpaint_1.mp4" autoplay loop controls muted playsinline></video>
+  </tbody>
+  <tbody>
+        <div class="tgve-video-title-container">
+            <div class="tgve-video-title">Change horse to turtle</div>
+            <div class="tgve-video-title">Ours</div>        
+            <div class="tgve-video-title">InsVid2Vid</div>
+            
+        </div>
+        <video class="tgve-video" src="assets/tgve_local_1.mp4" autoplay loop controls muted playsinline></video>
+  </tbody>
+  <tbody>
+        <div class="tgve-video-title-container">
+            <div class="tgve-video-title">Remove the plane and its contrail</div>
+            <div class="tgve-video-title">Ours</div>        
+            <div class="tgve-video-title">InsVid2Vid</div>
+            
+        </div>
+        <video class="tgve-video" src="assets/tgve_remove_1.mp4" autoplay loop controls muted playsinline></video>
+  </tbody>
+  <tbody>
+        <div class="tgve-video-title-container">
+            <div class="tgve-video-title">Change green pants to blue</div>
+            <div class="tgve-video-title">Ours</div>        
+            <div class="tgve-video-title">InsVid2Vid</div>
+            
+        </div>
+        <video class="tgve-video" src="assets/tgve_inpaint_2.mp4" autoplay loop controls muted playsinline></video>
+  </tbody>
+  <tbody>
+        <div class="tgve-video-title-container">
+            <div class="tgve-video-title">Make the style expressionist</div>
+            <div class="tgve-video-title">Ours</div>        
+            <div class="tgve-video-title">InsVid2Vid</div>
+            
+        </div>
+        <video class="tgve-video" src="assets/tgve_style_1.mp4" autoplay loop controls muted playsinline></video>
+  </tbody>
+</table>
+<br/>
 
 <!--Acknowledgements -->
   <div class="container is-max-desktop">
