@@ -56,6 +56,24 @@
       font-style: italic;
       font-size: 1em; /* Adjust as needed */
     }
+    .ablation-video-title-container {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      margin: 0 10%;
+    }
+    .ablation-video-title {
+      width: 100%;
+      text-align: center;
+      font-style: italic;
+      font-size: 1em; /* Adjust as needed */
+    }
+    .ablation-video {
+        display: block;
+        width: 80%;
+        height: auto;
+        margin: 0 10%; 
+    }
     .equal-contribution {
       text-align: center;
       width: 80%;
@@ -639,6 +657,72 @@ A comparison of our model with the previous state-of-the-art, InstructVid2Vid, o
             
         </div>
         <video class="tgve-video" src="assets/tgve_style_1.mp4" autoplay loop controls muted playsinline></video>
+  </tbody>
+</table>
+<br/>
+
+<!-- Ablations -->
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Ablations</h2>
+        <div class="content has-text-justified">
+        </div>
+      </div>
+    </div>
+  </div>
+<table width="960" align="center" >
+  <tbody>
+        <div class="ablation-video-title-container">
+            <div class="ablation-video-title">Add flowers around the bird</div>
+            <div class="ablation-video-title">Ours</div>        
+            <div class="ablation-video-title">Fixed bins</div>
+            <div class="ablation-video-title">No SDS</div>
+            <div class="ablation-video-title">No adversarial</div>
+            <div class="ablation-video-title">No alignment</div>
+            <div class="ablation-video-title">Random adapters</div>
+            
+        </div>
+        <video class="ablation-video" src="assets/ablation_0.mp4" autoplay loop controls muted playsinline></video>
+  </tbody>
+    <tbody>
+        <div class="ablation-video-title-container">
+            <div class="ablation-video-title">Make it misty morning</div>
+            <div class="ablation-video-title">Ours</div>        
+            <div class="ablation-video-title">Fixed bins</div>
+            <div class="ablation-video-title">No SDS</div>
+            <div class="ablation-video-title">No adversarial</div>
+            <div class="ablation-video-title">No alignment</div>
+            <div class="ablation-video-title">Random adapters</div>
+            
+        </div>
+        <video class="ablation-video" src="assets/ablation_1.mp4" autoplay loop controls muted playsinline></video>
+  </tbody>
+  <tbody>
+        <div class="ablation-video-title-container">
+            <div class="ablation-video-title">Change cat to dog</div>
+            <div class="ablation-video-title">Ours</div>        
+            <div class="ablation-video-title">Fixed bins</div>
+            <div class="ablation-video-title">No SDS</div>
+            <div class="ablation-video-title">No adversarial</div>
+            <div class="ablation-video-title">No alignment</div>
+            <div class="ablation-video-title">Random adapters</div>
+            
+        </div>
+        <video class="ablation-video" src="assets/ablation_2.mp4" autoplay loop controls muted playsinline></video>
+  </tbody>
+  <tbody>
+        <div class="ablation-video-title-container">
+            <div class="ablation-video-title">Make the style Minecraft</div>
+            <div class="ablation-video-title">Ours</div>        
+            <div class="ablation-video-title">Fixed bins</div>
+            <div class="ablation-video-title">No SDS</div>
+            <div class="ablation-video-title">No adversarial</div>
+            <div class="ablation-video-title">No alignment</div>
+            <div class="ablation-video-title">Random adapters</div>
+            
+        </div>
+        <video class="ablation-video" src="assets/ablation_3.mp4" autoplay loop controls muted playsinline></video>
   </tbody>
 </table>
 <br/>
